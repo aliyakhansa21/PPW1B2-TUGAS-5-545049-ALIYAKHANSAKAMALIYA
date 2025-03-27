@@ -1,0 +1,31 @@
+/* Warna default untuk layar besar */
+body {
+    background-color: purple;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Jika layar lebih kecil atau sama dengan 1024px */
+/* small laptop and tablet */
+@media (max-width: 1024px) { 
+    body {
+        background-color: orange;
+    }
+}
+
+/* Jika layar lebih kecil atau sama dengan 768px */
+/* Tablet and large phone */
+@media (max-width: 768px) {
+    body {
+        background-color: blue;
+    }
+}
+
+/* Jika layar lebih kecil atau sama dengan 480px */
+/* small phone */
+@media (max-width: 480px) {
+    body {
+        background-color: green;
+    }
+}

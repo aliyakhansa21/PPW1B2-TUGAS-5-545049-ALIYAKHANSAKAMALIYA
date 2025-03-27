@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+
+.container {
+    display: flex;
+    gap: 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box {
+    padding: 20px;
+    background: steelblue;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    flex: 1;
+}
+
+/* Media Query: Ubah menjadi kolom jika ukuran layar antara 600px - 1024px */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
